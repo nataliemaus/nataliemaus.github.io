@@ -161,13 +161,36 @@ a {
     font-size: 0.95rem;
 }
 
+/* Awards & Organizing Lists */
+.awards-list,
+.organizing-list {
+    list-style: none;
+}
+
+.awards-list li,
+.organizing-list li {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.awards-list li::before,
+.organizing-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0066cc;
+}
+
 /* Experience */
 .experience-list {
     list-style: none;
 }
 
 .experience-list li {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+    padding-left: 15px;
+    border-left: 3px solid #ddd;
 }
 
 .experience-list p {
